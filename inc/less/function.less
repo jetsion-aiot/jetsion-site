@@ -1,0 +1,227 @@
+/*color*/
+@red:#e04a4a; @red-dark:#b10a10; @red-light:#eb6d71;@red-white:#feedf3;@red-black:#640000;
+@yellow:#fff408;@yellow-light:#ffe8a1;@yellow-dark:#ffcc03;
+@yellow-white:#fff3cd;
+@green:#40c174;/**/
+@green-gray:#2e9697;/**/
+@green-light:#82cd8c;
+@green-dark:#258083; 
+@green-black:#258083;  
+@green-white:#f4faf6;
+@green-th:#48d09e;
+@green-rim:#c4e3c9;
+@blue:#006fc2;/**/@blue-dark:#0f3f88; @blue-dark2:#0e5ace; @blue-black:#103f6e;  @blue-light:#3e89fa; 
+@blue-gray:#bac7dc; 
+@blue-white:#e8f2f9;
+@blue-th:#f4f9fc;
+@blue-rim:#8bc3e2;
+@purple:#9568ad;/**/@purple-dark:#854e9f;
+@cyan:#109bd6;
+@cyan-white:#cbedf1;
+@info:#00a0d6;
+@info-light:#74caeb;
+@gold:#a88a58;/**/
+@gold-dark:#72452e;
+@gold-black:#350304;
+@gold-light:#f3d6ae;
+@gold-white:#f2f0ec;
+@orange:#fea201; 
+@orange-dark:#ea5433; 
+@orange-white:#fdeeeb;
+ @dark:#262f36;
+@line-th:rgba(0,54,128,.2);
+@line:#ddd;
+@font-size:1.7rem;
+@font-size-sm:1.4rem;
+@font-size-big:2.2rem;
+@font-size-xl:3.2rem;
+
+@line-light:rgba(0,0,0,.2);
+@gray-dark:#444; /**/@gray:#999;/**/ @gray-light:#bababa; @gray-white:#c2c2c2;
+@light-gray:#dfdfdf;/**/@light-white:#f3f3f3;/**/ @white:#fff;
+@input-title:#999;
+@input-color:#324148;
+@input-color-p:#bbb;
+@side-bg:#fff;
+@side-bg-dark:#fff;
+@side-bar-a:@blue;
+@side-bar-collapsed-a:@dark;
+@side-bar-a-hover:@blue;
+@side-bar-a-active:@blue-dark;
+
+/*theme blue*/
+@main-color:@red;
+@main-color-2:@gold;
+@main-color-2-dark:@gold-dark;
+@main-color-2-black:@gold-black;
+@main-color-white:@orange-white;
+@main-color-light:@green-light;
+@main-color-th:@green-white; 
+@main-color-th-line:@line; 
+@main-color-gray:@green-gray;
+@main-color-dark:@red-dark;
+@main-color-black:@green-black;
+@rim:@light-gray;
+@rim-shadow:@gray;
+/*END theme blue*/
+
+@radius:15px;
+@radius-big:25px;
+@side-line:#0076cd;
+@container-width:1170px;
+
+@side-width:80px;
+@side-width-close:50px;
+.font{
+  font-family: 'Roboto-light', Helvetica, Arial, 'STHeiti',"微軟正黑體", sans-serif;
+}
+.transition(@second: .2s){
+  -moz-transition: all @second ease-out;
+  -webkit-transition: all @second ease-out;
+  -o-transition: all @second ease-out;
+  transition: all @second ease-out;}
+  .transition-set(@second){
+  -moz-transition: all @second ease-out;
+  -webkit-transition: all @second ease-out;
+  -o-transition: all @second ease-out;
+  transition: all @second ease-out;}
+.scale(@a){
+   -webkit-transform: scale(@a);
+   -moz-transform: scale(@a);
+   -o-transform: scale(@a);
+   -ms-transform: scale(@a);
+   transform: scale(@a);
+   }
+.shadow(){
+   -webkit-box-shadow: 3px 3px 13px 0 rgba(0,0,0,.15);
+box-shadow: 3px 3px 13px 0 rgba(0,0,0,.15);
+}
+.shadow-big(){
+       -webkit-box-shadow: 0px 10px 30px 0 rgba(0,0,0,.15);
+box-shadow: 0px 10px 30px 0 rgba(0,0,0,.15);
+}
+.shadow-form(){
+   -webkit-box-shadow: 1px 1px 12px 0 rgba(0,0,0,.15);
+box-shadow: 1px 1px 12px 0 rgba(0,0,0,.15);
+}
+.shadow-inner () {
+ -webkit-box-shadow:inset 0 0 12px 0 rgba(0,0,0,.15);
+box-shadow:inset 0 0 12px 0 rgba(0,0,0,.15);
+  }
+  .text-shadow-3D{
+      text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+  }
+.gradient (@startColor, @endColor) {
+background: linear-gradient(180deg, @startColor 0%, @endColor 100%);
+}
+.gradient-h (@startColor, @endColor) {
+background: linear-gradient(90deg, @startColor 0%, @endColor 100%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item-w {
+  max-width: 50%;
+}
+
+.flex-item-top {
+  align-self: flex-start;
+}
+
+.flex-item-bottom {
+  align-self: flex-end;
+}
+
+.flex-center{
+         display: -webkit-flex; /* Safari */
+        -webkit-align-items: center; /* Safari 7.0+ */
+        display: flex;
+        align-items: center;
+        /*水平置中*/
+        justify-content: center; 
+        -webkit-justify-content: center; 
+}
+.flex-center-left{
+         display: -webkit-flex; /* Safari */
+        -webkit-align-items: center; /* Safari 7.0+ */
+        display: flex;
+        align-items: center;
+        /*水平置左*/
+        justify-content: left;
+        -webkit-justify-content: left;
+}
+.flex-center-right{
+         display: -webkit-flex; /* Safari */
+        -webkit-align-items: center; /* Safari 7.0+ */
+        display: flex;
+        align-items: center;
+        /*水平置左*/
+        justify-content: end;
+        -webkit-justify-content: end;
+        justify-content:flex-end;
+}
+.row-flex{
+  display: flex;
+  flex-wrap: wrap;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.animate(@name, @duration) {
+    -webkit-animation: @name @duration 0s linear 1 normal both;
+    animation: @name @duration 0s linear 1 normal both;
+}
+
+.column(@a, @b) {
+  -moz-column-count: @a;
+-moz-column-gap: @b;
+-webkit-column-count: @a;
+-webkit-column-gap: @b;
+column-count: @a;
+column-gap: @b;
+}
+
+.placeholder-color(@f_color,@f_size) {
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: @f_color;
+        font-size: @f_size;
+        }
+        &::-moz-placeholder { /* Firefox 19+ */
+        color: @f_color;
+        font-size: @f_size;
+        }
+        &:-ms-input-placeholder { /* IE 10+ */
+        color: @f_color;
+        font-size: @f_size;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+        color: @f_color;
+        font-size: @f_size;
+        }
+}
+.rotate(@a){
+  -moz-transform: rotate(@a);
+          -webkit-transform: rotate(@a);
+          -o-transform: rotate(@a);
+          -ms-transform: rotate(@a);
+          transform: rotate(@a);
+}
+@ie:\9;

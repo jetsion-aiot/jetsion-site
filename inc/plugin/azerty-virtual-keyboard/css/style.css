@@ -1,0 +1,134 @@
+:root {
+  --documentHeight: 800px;
+  --keyboardHeight: 390px;
+  --keyboardButton: 80px;
+  --keyboardLetterSpacing: 13px;
+  --keyboardNumberSpacing: 13px;
+  --buttonHeight: 75px;
+  --fontSize: 36px;
+}
+
+html,
+body {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 1680px;
+  height: var(--documentHeight);
+  margin: 10px;
+}
+
+label {
+  font-size: var(--fontSize);
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.vKeyboard {
+  background-color: #000;
+  position: absolute;
+  height: var(--keyboardHeight);
+  top: calc(var(--documentHeight) - var(--keyboardHeight));
+  width: inherit;
+  overflow: hidden;
+}
+
+.vKeyboard-container {
+  margin: 0px 20px;
+}
+
+.vKeyboard-numbers {
+  margin-right: var(--keyboardLetterSpacing);
+}
+
+.vKeyboard-spacer {
+  width: calc(var(--keyboardButton) / 2);
+}
+
+.vKeyboardRow {
+  margin-top: var(--keyboardLetterSpacing);
+  margin-bottom: var(--keyboardLetterSpacing);
+}
+
+.vKeyboard-offsetRow1 {
+  margin-left: 0px;
+  margin-right: var(--keyboardButton);
+}
+.vKeyboard-offsetRow2 {
+  margin-left: calc(var(--keyboardButton) / 2);
+}
+.vKeyboard-offsetRow3 {
+  margin-left: var(--keyboardButton);
+}
+
+.vKeyboard-letter,
+.vKeyboard-number,
+.vKeyboard-symbol,
+.vKeyboard-enter,
+.vKeyboard-return {
+  color: #fff;
+  font-size: 45px;
+  height: var(--keyboardButton);
+  width: var(--keyboardButton);
+  border-radius: 6px;
+  margin: 0 0;
+}
+
+.vKeyboard-letter,
+.vKeyboard-number {
+  background-color: #4e4e4e;
+  box-shadow: 0 0 0px 0 #4e4e4e;
+  border: solid 0px #4e4e4e;
+}
+
+.vKeyboard-letter {
+  margin-left: var(--keyboardLetterSpacing);
+}
+
+.vKeyboard-number {
+  margin-left: var(--keyboardNumberSpacing);
+}
+
+.vKeyboard-symbol,
+.vKeyboard-return {
+  background-color: #3a3a3a;
+  box-shadow: 0 0 0px 0 #3a3a3a;
+  border: solid 0px #3a3a3a;
+  margin-left: 12px;
+}
+
+.vKeyboard-double {
+  width: calc((var(--keyboardButton) * 2) + var(--keyboardNumberSpacing));
+}
+
+.vKeyboard-pad {
+  margin-left: var(--keyboardNumberSpacing);
+}
+
+.vKeyboard-return {
+  margin-left: 0;
+}
+
+.vKeyboard-enter {
+  background-color: #9cd9cd;
+  box-shadow: 0 0 0px 0 #9cd9cd;
+  border: solid 0px #9cd9cd;
+  color: #fff;
+  height: calc(
+    (var(--keyboardButton) * 3) + (var(--keyboardLetterSpacing) * 2)
+  );
+}
+
+.vKeyboard-space {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.vKeyboard-space-character {
+  position: relative;
+  top: 15px;
+  pointer-events: none;
+}

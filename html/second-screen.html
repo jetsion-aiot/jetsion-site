@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<head>
+    <meta charset="utf-8">
+    <title>和欣客運 HO-HSIN ebus</title>
+    <!--SEO Meta Tags-->
+    <meta name="description" content="和欣客運 HO-HSIN ebus" />
+    <meta name="keywords" content="和欣客運 HO-HSIN ebus" />
+    <meta name="author" content="和欣客運 HO-HSIN ebus" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link href="../inc/img/favicon.ico" rel="icon" />
+    <!--Master Slider Styles-->
+    <!-- menu -->
+    <link href="../inc/plugin/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="../inc/css/icomoon/style.css" rel="stylesheet">
+    <link href="../inc/css/cf-layout.css" rel="stylesheet">
+</head>
+
+<body class="has-rim has-footer">
+    <div class="container-fluid second-screen bg-purple">
+        <h1 class="title-xl" data-content="往台南">往台南</h1>
+        <!-- <span class="now-date"></span>
+            <span class="now-time"></span> -->
+    <div class="Departure-board">
+        <table>
+            <thead>
+            <tr>
+                <th>時間</th>
+                <th>艙等</th>
+                <th>狀態</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="time">10 : 00</span></td>
+                    <td>三排椅</td>
+                    <td>尚有座位</td>
+                </tr>
+                <tr>
+                    <td><span class="time">12 : 30</span></td>
+                    <td>二排椅</td>
+                    <td>尚有座位</td>
+                </tr>
+                <tr>
+                    <td><span class="time">15 : 42</span></td>
+                    <td>四排椅</td>
+                    <td>尚有座位</td>
+                </tr>
+                <tr>
+                    <td><span class="time">17 : 58</span></td>
+                    <td>三排椅</td>
+                    <td>尚有座位</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+     <div class="container-fluid second-screen welcome d-none">
+         <h1 class="title-xxl" data-content="和欣客運">和欣客運</h1>
+         <div class="b-bg">
+        <p data-content="在此為您服務">在此為您服務</p>
+         </div>
+     </div>
+     <div class="container-fluid second-screen for-ad d-none">
+         <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active"> <img src="../inc/img/global/second_screen_0.jpg" alt=""> </div>
+                <div class="carousel-item"> <img src="../inc/img/global/second_screen_7.jpg" alt=""> </div>
+                <div class="carousel-item"> <img src="../inc/img/global/second_screen_8.jpg" alt=""> </div>
+            </div>
+        </div>
+     </div>
+    <div class="demo-link">
+        <ul class="inline-block">
+            <li><a class="color-gray">(1920X1080)DEMO : </a></li>
+            <li><a href="javascript:;" class="demo-link-purple">紫色</a></li>
+            <li><a href="javascript:;" class="demo-link-blue">藍色</a></li>
+            <li><a href="javascript:;" class="demo-link-red">紅色</a></li>
+            <li><a href="javascript:;" class="demo-link-black">黑色</a></li>
+            <li><a href="javascript:;" class="demo-link-gold">金色</a></li>
+            <li><a href="javascript:;" class="demo-link-welcome">歡迎頁</a></li>
+            <li><a href="javascript:;" class="demo-link-ad">廣告輪播</a></li>
+        </ul>
+    </div>
+    <!-- <div id="load-modal" data-include="load-modal.html"></div> -->
+    <div class="modal fade modal-second-screen-ad">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        
+    </div>
+</div>
+    <script src="../inc/js/jquery.min.js"></script>
+    <script src="../inc/plugin/bootstrap/bootstrap.min.js"></script>
+    <script src="../inc/js/base.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        setTimeout(function() {
+            $('.carousel').carousel({
+                interval: 6000
+            });
+            $(".demo-link-purple").click(function(){
+                $(".second-screen").removeClass("bg-blue bg-red bg-gold bg-black").addClass("bg-purple");
+                $(".second-screen.welcome,.second-screen.for-ad").addClass("d-none");
+            });
+            $(".demo-link-blue").click(function(){
+                $(".second-screen").removeClass("bg-purple bg-red bg-gold bg-black").addClass("bg-blue");
+                $(".second-screen.welcome,.second-screen.for-ad").addClass("d-none");
+            });
+            $(".demo-link-red").click(function(){
+                $(".second-screen").removeClass("bg-purple bg-blue bg-gold bg-black").addClass("bg-red");
+                $(".second-screen.welcome,.second-screen.for-ad").addClass("d-none");
+            });
+            $(".demo-link-black").click(function(){
+                $(".second-screen").removeClass("bg-purple bg-blue bg-gold bg-red").addClass("bg-black");
+                $(".second-screen.welcome,.second-screen.for-ad").addClass("d-none");
+            });
+            $(".demo-link-gold").click(function(){
+                $(".second-screen").removeClass("bg-purple bg-blue bg-black bg-red").addClass("bg-gold");
+                $(".second-screen.welcome,.second-screen.for-ad").addClass("d-none");
+            });
+            $(".demo-link-welcome").click(function(){
+                $(".second-screen.welcome").removeClass("d-none");
+                $(".second-screen.for-ad").addClass("d-none");
+            });
+            $(".demo-link-ad").click(function(){
+                $(".second-screen.welcome").addClass("d-none");
+                $(".second-screen.for-ad").removeClass("d-none");
+            });
+        }, 300);
+
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<head>
+    <meta charset="utf-8">
+    <title>和欣客運 HO-HSIN ebus</title>
+    <!--SEO Meta Tags-->
+    <meta name="description" content="和欣客運 HO-HSIN ebus" />
+    <meta name="keywords" content="和欣客運 HO-HSIN ebus" />
+    <meta name="author" content="和欣客運 HO-HSIN ebus" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link href="inc/img/favicon.ico" rel="icon" />
+    <!--Master Slider Styles-->
+    <!-- menu -->
+    <link href="inc/plugin/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="inc/css/icomoon/style.css" rel="stylesheet">
+    <link href="inc/css/cf-layout.css" rel="stylesheet">
+</head>
+<!-- <body class="login-warp has-rwd"> -->
+<body class="for-login">
+<div class="login-content wow fadeInLeft">
+                            <div class="right-form">
+                              <img src="inc/img/global/logo.png" alt="和欣客運" class="logo">
+                              <h1 class="title">自動售票系統</h1>
+                                <form>
+                                     <!-- form-group -->
+                                    <!-- <div class="form-group">
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-addon"><i class="icon-bus"></i></span>
+                                            <select class="form-control">
+                                        <option disabled="" selected="">運輸站</option>
+                                        <option>唯讀</option>
+                                    </select>
+                                        </div>
+                                        <span class="help-block">錯誤訊息</span>
+                                    </div> -->
+                                    <!-- / form-group -->
+                                    <!-- form-group -->
+                                    <div class="form-group">
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-addon"><i class="icon-people"></i></span>
+                                            <input class="form-control" placeholder="員工編號" type="text" value="">
+                                        </div>
+                                        <span class="help-block">錯誤訊息</span>
+                                    </div>
+                                    <!-- / form-group -->
+                                    <!-- form-group -->
+                                    <div class="form-group">
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-addon"><i class=" icon-lock"></i></span>
+                                            <input  id="password-2" class="form-control" placeholder="密碼" type="password">
+                                            <span class="input-group-addon">
+                                                <a href="javascript:;"><i class="icon-hide toggle-password" toggle="#password-2"></i></a>
+                                            </span>
+                                        </div>
+                                        <span class="help-block">錯誤訊息</span>
+                                    </div>
+                                    <!-- / form-group -->
+                                    
+                                    <div class="row gap15">
+                                        <div class="col-5">
+                                    <a href="html/main.html" class="btn btn-lg btn-block btn-dark">登入</a>
+                                        </div>
+                                        <div class="col-7">
+                                    <a href="index.html" class="btn btn-lg btn-block btn-primary">售票首頁</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+
+        
+            
+<script src="inc/js/jquery.min.js"></script>
+<script src="inc/plugin/bootstrap/bootstrap.min.js"></script>
+<script src="inc/plugin/keypad/jquery.plugin.min.js"></script>
+<script src="inc/plugin/keypad/jquery.keypad.js"></script>
+<script src="inc/js/base.js"></script>
+<script>
+    $(document).ready(function() {
+            input_title_show_hide();
+            password_eye();
+            // Full_screen();
+            setTimeout(function() {
+            $('.form-control').keypad();
+        }, 300);
+   
+         });
+</script>
+</body>
+
+</html> 

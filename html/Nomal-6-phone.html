@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<head>
+    <meta charset="utf-8">
+    <title>和欣客運 HO-HSIN ebus</title>
+    <!--SEO Meta Tags-->
+    <meta name="description" content="和欣客運 HO-HSIN ebus" />
+    <meta name="keywords" content="和欣客運 HO-HSIN ebus" />
+    <meta name="author" content="和欣客運 HO-HSIN ebus" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link href="../inc/img/favicon.ico" rel="icon" />
+    <!--Master Slider Styles-->
+    <!-- menu -->
+    <link href="../inc/plugin/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="../inc/css/icomoon/style.css" rel="stylesheet">
+    <!-- <link href="../inc/plugin/keypad/jquery.keypad.css" rel="stylesheet"> -->
+    <link href="../inc/css/cf-layout.css" rel="stylesheet">
+</head>
+
+<body class="has-rim has-footer">
+    <div class="container">
+        <div id="load-header" data-include="header.html"></div>
+        <h2 class="welcome-title lt">
+            <ul class="inline-table">
+                <li class="for-title">
+                    <span>輸入手機號碼</span>
+                </li>
+                <li class="for-step">
+                    <ul class="wizard-steps">
+                        <li class="active"><span class="step">1</span> </li>
+                        <li class="active"><span class="step">2</span></li>
+                        <li class="active"><span class="step">3</span></li>
+                        <li class="active"><span class="step">4</span></li>
+                        <li class="active"><span class="step">5</span></li>
+                        <li class="current"><span class="step">6</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- <a href="../index.html" class="btn btn-lg btn-default pos-ab right">回首頁 <i class="icon-arrow-right"></i> </a> -->
+        </h2>
+        <div class="rim">
+            <div class="form-group ct">
+                                      <input id="defaultKeypad" class="form-control form-control-lg has-shadow" type="text" value="" placeholder="請輸入">
+                                <span class="help-block">錯誤訊息</span>
+                <!-- <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                    </div>
+                    <div class="col-2"></div>
+                </div> -->
+                            </div>
+        </div>
+                                <p class="mb0 ct">範例：「0912345678」</p>
+
+        </div>
+        <div class="btn-area ct">
+            <a href="javascript:;" class="btn btn-dark" onclick="history.go(-1); return false;"><i class="icon-arrow-left"></i> 返回</a>
+              <a href="Nomal-7-ticket-number.html" class="btn btn-primary">下一步  <i class="icon-arrow-right"></i> </a>
+        </div>
+        <div class="ct mt20">
+            DEMO LINK：
+            <a href=".modal-error" class="" data-toggle="modal">錯誤訊息</a>
+        </div>
+    </div>
+    <div id="load-footer" data-include="footer.html"></div>
+    <div id="load-modal" data-include="load-modal.html"></div>
+    <script src="../inc/js/jquery.min.js"></script>
+    <script src="../inc/plugin/bootstrap/bootstrap.min.js"></script>
+    <script src="../inc/plugin/keypad/jquery.plugin.min.js"></script>
+    <script src="../inc/plugin/keypad/jquery.keypad.js"></script>
+    <script src="../inc/js/base.js"></script>
+    <script>
+    $(document).ready(function() {
+        input_title_show_hide();
+        // Full_screen();
+        setTimeout(function() {
+        $('#defaultKeypad').keypad();
+
+        }, 300);
+
+    });
+    </script>
+</body>
+
+</html>

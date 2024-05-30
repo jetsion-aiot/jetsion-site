@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<head>
+    <meta charset="utf-8">
+    <title>和欣客運 HO-HSIN ebus</title>
+    <!--SEO Meta Tags-->
+    <meta name="description" content="和欣客運 HO-HSIN ebus" />
+    <meta name="keywords" content="和欣客運 HO-HSIN ebus" />
+    <meta name="author" content="和欣客運 HO-HSIN ebus" />
+    <!--Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--Favicon-->
+    <link href="../inc/img/favicon.ico" rel="icon" />
+    <!--Master Slider Styles-->
+    <!-- menu -->
+    <link href="../inc/plugin/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="../inc/css/icomoon/style.css" rel="stylesheet">
+    <link href="../inc/css/cf-layout.css" rel="stylesheet">
+</head>
+
+<body class="has-rim has-footer">
+    <div class="container">
+        <div id="load-header" data-include="header.html"></div>
+        <ul class="customer-index-btn for-admin">
+            <li>
+                <a href="../index.html">
+                    <img src="../inc/img/global/icon-ticket.png" alt="">
+                    <h3>售票程式</h3>
+                </a>
+            </li>
+            <li class="red-bg">
+                <a href=".modal-handover-check" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/icon-handover.png" alt="">
+                    <h3>交接結帳</h3>
+                </a>
+            </li>
+            <li>
+                <a href=".modal-coin-setting" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/icon-coin-setting.png" alt="">
+                    <h3>補幣收幣設定</h3>
+                </a>
+            </li>
+            <li class="red-bg">
+                <a href=".modal-report" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/icon-report.png" alt="">
+                    <h3>報表檢視</h3>
+                </a>
+            </li>
+            <li class="red-bg">
+                <a href=".modal-setting-station" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/icon-setting.png" alt="">
+                    <h3>設定本站</h3>
+                </a>
+            </li>
+            <li>
+                <a href=".modal-print-ticket" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/member-record.png" alt="">
+                    <h3>印票校正</h3>
+                </a>
+            </li>
+            <li class="red-bg">
+                <a href=".modal-paper-ticket" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/icon-paper-ticket.png" alt="">
+                    <h3>確認票紙狀態</h3>
+                </a>
+            </li>
+            <li>
+                <a href=".modal-last-trade" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/icon-last-trade.png" alt="">
+                    <h3>最後一筆交易</h3>
+                </a>
+            </li>
+            <li>
+                <a href="Stop-service.html">
+                    <img src="../inc/img/global/stop.png" alt="">
+                    <h3>暫停服務</h3>
+                </a>
+            </li>
+            <li class="red-bg">
+                <a href=".modal-update" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/sync.png" alt="">
+                    <h3>更新程式</h3>
+                </a>
+            </li>
+            <li>
+                <a href=".modal-shut-down" data-toggle="modal" data-backdrop="static">
+                    <img src="../inc/img/global/power-button.png" alt="">
+                    <h3>關閉程式</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <small class="mt30 ct">DEMO LINK：<a href="second-screen.html" target="_blank">第二螢幕</a></small>
+    <!-- <div id="load-footer" data-include="footer.html"></div> -->
+    <div id="load-modal" data-include="load-modal.html"></div>
+    <script src="../inc/js/jquery.min.js"></script>
+    <script src="../inc/plugin/bootstrap/bootstrap.min.js"></script>
+    <script src="../inc/js/base.js"></script>
+    <script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('.carousel').carousel({
+                interval: 6000
+            });
+            // $("a[href='../../index.html']").attr('href', '../../login.html');
+            document.querySelector('footer .btn-reload.input-group').classList.add("d-none");
+
+        }, 300);
+
+    });
+    </script>
+</body>
+
+</html>
